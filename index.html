@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#c1{
+				margin: 130px;
+				background: #FFFFFF;
+			}
+			body{
+				background: #000000;
+			}
+		</style>
+	</head>
+	<body style="background: #000000;">
+		<canvas id="c1" width="400" height="400">
+			<span>不支持canvas的浏览器</span>
+		</canvas>
+		
+		<script type="text/javascript">
+			var oC = document.getElementById('c1');
+			
+			var oGC = oC.getContext('2d');
+			
+			oGC.fillStyle = 'red';
+			
+			oGC.strokeStyle = 'blue';
+			
+			oGC.lineWidth = 10;
+			
+			oGC.fillRect(50,50,100,100);
+			
+			oGC.strokeRect(180.5,50.5,100,100);
+			
+		</script>
+	</body>
+</html>
